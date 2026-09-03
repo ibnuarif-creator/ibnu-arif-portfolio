@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ibnu Arif, S.Kom., M.Kom. — Dosen Informatika Universitas Tanjungpura. Membangun aplikasi imersif dan web untuk pendidikan dan pelestarian budaya Kalimantan Barat."
+    />
+    <script>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var dark = stored !== "light";
+        document.documentElement.classList.toggle("dark", dark);
+      })();
+    </script>
+    <title>Ibnu Arif — Dosen Informatika &amp; Pengembang</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

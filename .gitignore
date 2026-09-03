@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.local
+*.tsbuildinfo
+
+# Design reference / working files — not part of the deployed site.
+# The Hirael snapshot bundles another company's compiled site assets,
+# so it's kept local rather than published to a public repo.
+/The components shadcn_ui doesn't ship. - Hirael.html
+/The components shadcn_ui doesn't ship. - Hirael_files/
+/font/
+/scren/
+/border.png
+/Profil.png
