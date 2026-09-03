@@ -4,42 +4,42 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Medium.ttf") format("truetype");
+  src: url("./assets/fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "General Sans";
-  src: url("/fonts/GeneralSans-Regular.woff2") format("woff2");
+  src: url("./assets/fonts/GeneralSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "General Sans";
-  src: url("/fonts/GeneralSans-Medium.woff2") format("woff2");
+  src: url("./assets/fonts/GeneralSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "General Sans";
-  src: url("/fonts/GeneralSans-Semibold.woff2") format("woff2");
+  src: url("./assets/fonts/GeneralSans-Semibold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;

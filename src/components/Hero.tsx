@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import { profile } from "../data/content";
 import { buttonVariants } from "./ui/button";
+import profileImage from "../assets/profil.png";
 
 export function Hero() {
   return (
@@ -59,7 +60,7 @@ export function Hero() {
         >
           <div className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
             <img
-              src="/profil.png"
+              src={profileImage}
               alt={`Potret ${profile.name}`}
               className="aspect-[4/5] w-full object-cover object-top"
             />
