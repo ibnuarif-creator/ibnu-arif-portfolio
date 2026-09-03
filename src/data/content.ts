@@ -231,7 +231,7 @@ export const education: EducationEntry[] = [
     degree: "Magister Komputer (M.Kom)",
     institution: "Universitas Atma Jaya Yogyakarta",
     years: "2022–2023",
-    focus: "Machine Learning, Artificial Neural Networks (IPK 3.9)",
+    focus: "Machine Learning, Artificial Neural Networks",
   },
   {
     degree: "Sarjana Komputer (S.Kom)",
