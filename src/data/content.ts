@@ -279,10 +279,10 @@ export const skills: SkillGroup[] = [
 
 export const nav = [
   { id: "tentang", label: "Tentang" },
+  { id: "pendidikan", label: "Pendidikan" },
   { id: "karya", label: "Karya & Proyek" },
   { id: "hibah", label: "Hibah" },
   { id: "publikasi", label: "Publikasi" },
   { id: "pengabdian", label: "Pengabdian" },
-  { id: "pendidikan", label: "Pendidikan" },
   { id: "kontak", label: "Kontak" },
 ];

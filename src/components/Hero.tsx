@@ -54,7 +54,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.25 }}
-            className="ml-16 h-[74svh] max-h-[617px] w-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)] sm:ml-24 lg:ml-32"
+            className="h-[30svh] max-h-[230px] w-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)] sm:ml-24 sm:h-[55svh] sm:max-h-[440px] lg:ml-16 lg:h-[74svh] lg:max-h-[617px]"
           />
         </div>
 
