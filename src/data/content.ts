@@ -9,9 +9,9 @@ export const profile = {
     "https://scholar.google.co.id/citations?user=kEUT8RgAAAAJ&hl=id",
   hero: "Dosen Informatika & pengembang — membangun aplikasi imersif dan web, dengan minat pada teknologi untuk pendidikan dan pelestarian budaya Kalimantan Barat.",
   about:
-    "Saya dosen Informatika di Universitas Tanjungpura yang membangun kompetensi secara konsisten dari jenjang Diploma hingga Magister. Fokus saya pada pengembangan sistem, aplikasi berbasis web, dan teknologi imersif seperti Augmented Reality — dengan minat khusus pada pemanfaatan teknologi untuk pendidikan dan pelestarian budaya Kalimantan Barat. Bagi saya, teknologi paling bermakna ketika mampu menjawab persoalan nyata secara kreatif.",
+    "Saya dosen Informatika di Universitas Tanjungpura yang membangun kompetensi secara konsisten dari jenjang Diploma hingga Magister. Sebagai dosen yang baru memulai perjalanan akademik, saya tertarik mendalami ilmu komputasi (computational science) dan bagaimana pendekatan ini dapat menjawab persoalan nyata secara kreatif. Fokus saya pada pengembangan sistem, aplikasi berbasis web, dan teknologi imersif seperti Augmented Reality — termasuk bagaimana teknologi imersif mampu mengubah pengalaman pengguna dan menghadirkan solusi baru di berbagai bidang — dengan minat khusus pada pemanfaatan teknologi untuk pendidikan dan pelestarian budaya Kalimantan Barat.",
   aboutSecondary:
-    "Selain mengembangkan sistem, saya mengampu mata kuliah di bidang pengembangan sistem dan pemrograman.",
+    "Selain mengembangkan sistem, saya mengampu mata kuliah di bidang pengembangan sistem dan pemrograman, dengan komitmen menghadirkan pembelajaran yang menjembatani teori dan praktik — membangun kemampuan teknis sekaligus cara berpikir kreatif pada mahasiswa.",
 };
 
 export type ProjectStatus = "selesai" | "berkembang";

@@ -53,17 +53,17 @@
   --foreground: 10 10 10;
   --card: 255 255 255;
   --card-foreground: 10 10 10;
-  --primary: 10 10 10;
+  --primary: 146 64 14; /* amber accent — the one color on top of black/white, tuned to ~6.8:1 on white so text-primary stays WCAG AA as body-adjacent text, not just as a button fill */
   --primary-foreground: 250 250 250;
   --secondary: 240 240 240;
   --secondary-foreground: 10 10 10;
   --muted: 240 240 240;
-  --muted-foreground: 107 107 107;
+  --muted-foreground: 82 82 82; /* darkened from 107 107 107 (~5.1:1) to ~7:1 for stronger WCAG AA margin */
   --accent: 229 229 229;
   --accent-foreground: 10 10 10;
   --border: #e0e0e0;
   --input: #e0e0e0;
-  --ring: 10 10 10;
+  --ring: 146 64 14;
 }
 
 .dark {
@@ -71,23 +71,26 @@
   --foreground: 245 245 245;
   --card: 20 20 20;
   --card-foreground: 245 245 245;
-  --primary: 245 245 245;
+  --primary: 245 165 36; /* amber accent — same one-color-on-black-white principle, ~9.7:1 on the near-black background */
   --primary-foreground: 10 10 10;
   --secondary: 31 31 31;
   --secondary-foreground: 245 245 245;
   --muted: 26 26 26;
-  --muted-foreground: 163 163 163;
+  --muted-foreground: 179 179 179; /* lightened from 163 163 163 (~7.9:1) to ~8.7:1 for stronger WCAG AA margin */
   --accent: 38 38 38;
   --accent-foreground: 245 245 245;
   --border: rgba(255, 255, 255, 0.12);
   --input: rgba(255, 255, 255, 0.16);
-  --ring: 245 245 245;
+  --ring: 245 165 36;
 }
 
 @layer base {
   ::selection {
-    background: rgb(var(--primary));
-    color: rgb(var(--primary-foreground));
+    /* Reverse-video highlight (foreground/background swapped) — kept
+       black & white, not the amber accent, so text selection doesn't
+       read as another color in the palette. */
+    background: rgb(var(--foreground));
+    color: rgb(var(--background));
   }
 
   html {

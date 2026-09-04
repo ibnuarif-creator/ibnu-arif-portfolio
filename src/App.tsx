@@ -1,11 +1,10 @@
 import { Nav } from "./components/Nav";
 import { Hero } from "./components/Hero";
-import { About } from "./components/About";
+import { AboutEducation } from "./components/AboutEducation";
 import { Projects } from "./components/Projects";
 import { Grants } from "./components/Grants";
 import { Publications } from "./components/Publications";
 import { CommunityService } from "./components/CommunityService";
-import { Education } from "./components/Education";
 import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
@@ -16,12 +15,11 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
-        <About />
+        <AboutEducation />
         <Projects />
         <Grants />
         <Publications />
         <CommunityService />
-        <Education />
         <Skills />
         <Contact />
       </main>
