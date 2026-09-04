@@ -37,24 +37,30 @@ export function Hero() {
           </motion.h1>
         </div>
 
-        {/* Cut-out portrait (background removed) sits in FRONT of the name,
-            like the model over "PORTFOLIO" in cth1.png. It's sized off the
-            viewport (not the parent %) and bottom-aligned to the OUTER
-            hero container — the same box the button row sits in — so its
-            bottom edge lands level with "Hubungi saya" / "Lihat karya &
-            proyek" instead of floating mid-way up the name. The static
-            centering/offset lives on this wrapper (flexbox, not
-            `transform`) because framer-motion writes its own inline
-            `transform` on the animated element — a Tailwind translate-x/y
-            class on that same element gets silently clobbered by motion's. */}
-        <div className="pointer-events-none absolute inset-0 z-10 flex items-end justify-center py-10 sm:py-14">
+        {/* Cut-out portrait (background removed). On phones it sits in
+            NORMAL FLOW between the name and the description — a fixed,
+            modest size — so it is structurally impossible for it to
+            overlap the paragraph below (that overlap was the actual mobile
+            bug: the "bottom-aligned to the button row" trick below is a
+            desktop-only layout, and forcing it onto a narrow screen made
+            the photo's box reach up over the description text). From `sm:`
+            up it switches to `position:absolute` and sits IN FRONT of the
+            name like the model over "PORTFOLIO" in cth1.png, bottom-aligned
+            to the OUTER hero container (the same box the button row sits
+            in) so its bottom edge lands level with "Hubungi saya" / "Lihat
+            karya & proyek". The centering/offset lives on this wrapper
+            (flexbox, not `transform`) because framer-motion writes its own
+            inline `transform` on the animated element — a Tailwind
+            translate-x/y class on that same element gets silently
+            clobbered by motion's. */}
+        <div className="pointer-events-none relative z-10 flex justify-center py-2 sm:absolute sm:inset-0 sm:items-end sm:py-14">
           <motion.img
             src={profileCutout}
             alt={`Potret ${profile.name}`}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.25 }}
-            className="h-[30svh] max-h-[230px] w-auto object-contain object-bottom drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)] sm:ml-24 sm:h-[55svh] sm:max-h-[440px] lg:ml-16 lg:h-[74svh] lg:max-h-[617px]"
+            className="h-56 w-auto object-contain object-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.45)] sm:ml-24 sm:h-[55svh] sm:max-h-[440px] sm:drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)] lg:ml-16 lg:h-[74svh] lg:max-h-[617px]"
           />
         </div>
 
